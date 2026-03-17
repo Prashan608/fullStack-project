@@ -1,5 +1,9 @@
 # 🛒 ShopSphere - E-Commerce Platform
 
+🚀 Live Project Preview
+
+👉 Click Here to Explore: https://shop-spehere.netlify.app
+
 A full-stack e-commerce application built with **React** and **Express.js** that allows users to browse products, filter by category, sort by price, manage shopping cart, and complete user authentication.
 
 ---
