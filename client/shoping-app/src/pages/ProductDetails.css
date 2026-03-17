@@ -1,0 +1,145 @@
+.product-details {
+  display: flex;
+  gap: 40px;
+  padding: 40px;
+  max-width: 1000px;
+  margin: auto;
+  background: white;
+  border-radius: 15px;
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.product-details-image {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.product-details-image img {
+  width: 300px;
+  height: 300px;
+  object-fit: contain;
+}
+
+.product-details-info {
+  flex: 2;
+}
+
+.product-details-info h2 {
+  font-size: 24px;
+  margin-bottom: 15px;
+}
+
+.product-details-price {
+  font-size: 22px;
+  font-weight: bold;
+  color: green;
+  margin: 15px 0;
+}
+
+.product-details-desc {
+  font-size: 15px;
+  color: #555;
+  line-height: 1.6;
+}
+
+.product-details-btn {
+  margin-top: 20px;
+  padding: 12px 20px;
+  background: black;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: 15px;
+}
+
+.product-details-btn:hover {
+  background: blue;
+}
+
+/* ✅ Responsive */
+@media (max-width: 768px) {
+  .product-details {
+    flex-direction: column;
+    text-align: center;
+    padding: 25px;
+    gap: 25px;
+  }
+
+  .product-details-image img {
+    width: 220px;
+    height: 220px;
+  }
+
+  .product-details-info h2 {
+    font-size: 20px;
+  }
+
+  .product-details-price {
+    font-size: 18px;
+  }
+
+  .product-details-btn {
+    width: 100%;
+    padding: 12px;
+  }
+}
+
+@media (max-width: 480px) {
+  .product-details {
+    padding: 15px;
+    gap: 15px;
+  }
+
+  .product-details-image img {
+    width: 180px;
+    height: 180px;
+  }
+
+  .product-details-info h2 {
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+
+  .product-details-desc {
+    font-size: 13px;
+    line-height: 1.5;
+  }
+
+  .product-details-price {
+    font-size: 16px;
+    margin: 10px 0;
+  }
+
+  .product-details-btn {
+    width: 100%;
+    padding: 12px;
+    font-size: 14px;
+    min-height: 44px;
+  }
+}
+
+@media (max-width: 375px) {
+  .product-details {
+    padding: 12px;
+  }
+
+  .product-details-image img {
+    width: 150px;
+    height: 150px;
+  }
+
+  .product-details-info h2 {
+    font-size: 16px;
+  }
+
+  .product-details-desc {
+    font-size: 12px;
+  }
+
+  .product-details-btn {
+    font-size: 13px;
+  }
+}

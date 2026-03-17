@@ -1,0 +1,86 @@
+/* ✅ Footer Responsive Styles */
+.footer {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 40px;
+  background: #222;
+  color: white;
+  text-align: center;
+}
+
+.footer-section {
+  flex: 1;
+}
+
+.footer-section h3 {
+  margin-top: 0;
+  margin-bottom: 15px;
+  font-size: 16px;
+}
+
+.footer-section p,
+.footer-section a {
+  font-size: 14px;
+  line-height: 1.8;
+  color: #ccc;
+  text-decoration: none;
+}
+
+.footer-section a:hover {
+  color: #667eea;
+  text-decoration: underline;
+}
+
+@media (max-width: 900px) {
+  .footer {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    padding: 30px 20px;
+    gap: 15px;
+  }
+
+  .footer-section {
+    text-align: left;
+  }
+}
+
+@media (max-width: 600px) {
+  .footer {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    gap: 15px;
+  }
+
+  .footer-section h3 {
+    font-size: 14px;
+    margin-bottom: 10px;
+  }
+
+  .footer-section p,
+  .footer-section a {
+    font-size: 12px;
+    line-height: 1.6;
+  }
+
+  .footer {
+    text-align: center;
+  }
+}
+
+@media (max-width: 375px) {
+  .footer {
+    padding: 15px;
+    gap: 12px;
+  }
+
+  .footer-section h3 {
+    font-size: 12px;
+  }
+
+  .footer-section p,
+  .footer-section a {
+    font-size: 11px;
+  }
+}

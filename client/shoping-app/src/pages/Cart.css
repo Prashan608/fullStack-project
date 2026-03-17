@@ -1,0 +1,185 @@
+.cart-page {
+  max-width: 900px;
+  margin: auto;
+  padding: 30px;
+}
+
+.cart-page h1 {
+  text-align: center;
+  margin-bottom: 25px;
+}
+
+.cart-empty {
+  text-align: center;
+  font-size: 18px;
+  color: gray;
+}
+
+.cart-items {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.cart-item {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  padding: 15px;
+  border-radius: 12px;
+  background: white;
+  box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.cart-item img {
+  width: 90px;
+  height: 90px;
+  object-fit: contain;
+}
+
+.cart-item-info {
+  flex: 1;
+}
+
+.cart-item-info p {
+  margin: 5px 0;
+}
+
+.cart-item-title {
+  font-weight: bold;
+  font-size: 15px;
+}
+
+.cart-item-price {
+  font-size: 16px;
+  color: green;
+  font-weight: bold;
+}
+
+.remove-btn {
+  padding: 8px 12px;
+  border: none;
+  background: crimson;
+  color: white;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.remove-btn:hover {
+  background: darkred;
+}
+
+.qty-controls {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-top: 10px;
+}
+
+.qty-controls button {
+  width: 35px;
+  height: 35px;
+  border: none;
+  background: black;
+  color: white;
+  font-size: 18px;
+  font-weight: bold;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: 0.2s ease;
+}
+
+.qty-controls button:hover {
+  background: blue;
+}
+
+.qty-controls span {
+  font-size: 16px;
+  font-weight: bold;
+  min-width: 20px;
+  text-align: center;
+}
+
+
+/* ✅ Responsive */
+@media (max-width: 600px) {
+  .cart-page {
+    padding: 15px;
+  }
+
+  .cart-page h1 {
+    font-size: 22px;
+    margin-bottom: 20px;
+  }
+
+  .cart-item {
+    flex-direction: column;
+    text-align: center;
+    padding: 12px;
+    gap: 12px;
+  }
+
+  .cart-item img {
+    width: 80px;
+    height: 80px;
+  }
+
+  .cart-item-title {
+    font-size: 14px;
+  }
+
+  .cart-item-price {
+    font-size: 14px;
+  }
+
+  .remove-btn {
+    width: 100%;
+    padding: 10px;
+    font-size: 14px;
+  }
+
+  .qty-controls {
+    justify-content: center;
+    gap: 15px;
+  }
+
+  .qty-controls button {
+    width: 40px;
+    height: 40px;
+    font-size: 16px;
+  }
+
+  .qty-controls span {
+    min-width: 30px;
+    font-size: 15px;
+  }
+}
+
+@media (max-width: 375px) {
+  .cart-page {
+    padding: 10px;
+  }
+
+  .cart-page h1 {
+    font-size: 18px;
+  }
+
+  .cart-item {
+    padding: 10px;
+  }
+
+  .cart-item img {
+    width: 70px;
+    height: 70px;
+  }
+
+  .cart-item-title {
+    font-size: 12px;
+  }
+
+  .qty-controls button {
+    width: 35px;
+    height: 35px;
+    font-size: 14px;
+  }
+}

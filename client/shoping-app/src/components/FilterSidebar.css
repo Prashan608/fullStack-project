@@ -1,0 +1,101 @@
+/* ✅ Filter Sidebar Responsive Styles */
+.filter-sidebar {
+  padding: 20px;
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  position: sticky;
+  top: 80px;
+}
+
+.filter-section {
+  margin-bottom: 25px;
+}
+
+.filter-section h3 {
+  font-size: 16px;
+  margin: 0 0 15px 0;
+  color: #333;
+  border-bottom: 2px solid #667eea;
+  padding-bottom: 10px;
+}
+
+.filter-option {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 10px;
+  cursor: pointer;
+}
+
+.filter-option input[type="checkbox"],
+.filter-option input[type="radio"] {
+  cursor: pointer;
+  width: 18px;
+  height: 18px;
+}
+
+.filter-option label {
+  cursor: pointer;
+  font-size: 14px;
+  margin: 0;
+  flex: 1;
+  color: #555;
+}
+
+.filter-option label:hover {
+  color: #667eea;
+}
+
+/* ✅ Responsive */
+@media (max-width: 900px) {
+  .filter-sidebar {
+    position: relative;
+    top: 0;
+  }
+}
+
+@media (max-width: 600px) {
+  .filter-sidebar {
+    padding: 15px;
+    margin-bottom: 20px;
+  }
+
+  .filter-section {
+    margin-bottom: 15px;
+  }
+
+  .filter-section h3 {
+    font-size: 14px;
+    margin-bottom: 10px;
+  }
+
+  .filter-option {
+    margin-bottom: 8px;
+    gap: 8px;
+  }
+
+  .filter-option label {
+    font-size: 13px;
+  }
+
+  .filter-option input[type="checkbox"],
+  .filter-option input[type="radio"] {
+    width: 16px;
+    height: 16px;
+  }
+}
+
+@media (max-width: 375px) {
+  .filter-sidebar {
+    padding: 12px;
+  }
+
+  .filter-section h3 {
+    font-size: 12px;
+  }
+
+  .filter-option label {
+    font-size: 12px;
+  }
+}
